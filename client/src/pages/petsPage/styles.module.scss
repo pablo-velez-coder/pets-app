@@ -1,0 +1,48 @@
+.PetsPage{
+    padding:1rem;
+
+&Card{
+    display:flex;
+    margin-bottom: 2rem;
+    
+
+    &Info{
+        flex:0.5;
+        padding:1rem;
+        &Age{
+            background-color:rgba(255, 166, 0, 0.201);
+            padding:0.4rem 1rem;
+            text-align: right;
+            border-radius: 12px;
+            color: rgb(194, 129, 10);
+        }
+        >p{
+            color: rgb(136, 130, 130); 
+        }
+        >h3{
+            font-weight: 800;
+            >span{
+                margin-left: 0.4rem;
+                color: gray;
+            }
+        }
+    }
+    &Image{
+        border-radius: 12px;
+        position: relative;
+       &Heart{
+           position: absolute;
+           top:1rem;
+           right:1rem;
+           color:#fff;
+           font-size: 1.3rem;
+       }
+        flex:0.5;
+       >img{
+           height:100%;
+           object-fit: cover;
+        width:100%;
+        border-radius: 12px 0px 0px 12px;
+       }
+    }}
+}

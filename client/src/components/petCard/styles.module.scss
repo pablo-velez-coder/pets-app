@@ -1,0 +1,25 @@
+.petCard{
+    position: relative;
+    >span{
+        font-weight: bold;
+    }
+    &Heart{
+        position: absolute;
+        bottom:2rem;
+        right:0.5rem;
+        color: #fff;
+        font-size: 1.2rem;
+        background-color: rgba(116, 109, 109, 0.164);
+        border-radius:50%;
+        height:2rem;
+        display:grid;
+        place-items: center;
+        width:2rem;
+    }
+   >img{
+    max-height:180px;
+    max-width:180px;
+    object-fit: contain;
+    border-radius:12px;  
+   }
+}

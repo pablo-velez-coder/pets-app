@@ -1,0 +1,113 @@
+.details{
+    position: relative;
+    &Heart{
+        position: absolute;
+        right:1rem;
+        top:1rem;
+        color:#fff;
+        font-size: 1.6rem;
+        background-color: rgba(255, 255, 255, 0.24);
+        height:2.7rem;
+        width:2.7rem;
+        border-radius: 50%;
+        display:grid;
+        place-items: center;
+    }
+    height:100vh;
+    >img{
+        width:100%;
+        border-radius: 0px 0px 14px 14px;
+        height:40vh;
+        object-fit: cover;
+    }
+    &Info{
+        position:relative;
+
+        &Top{
+            display:flex;
+        justify-content:space-between;
+        margin-bottom: 1rem;
+        >p{
+            color:#2431e9e1;
+            font-weight: 500;
+            >span{
+                margin-right: 0.4rem;
+            }
+        }
+        div>span{
+            margin-left: 0.5rem;
+            color:#2431e9e1
+        }
+        }
+        &More{
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 1.2rem;
+
+            &Tag{
+                text-align: center;
+                >p:first-child{
+                    margin-bottom: 0;
+                }
+                >p:last-child{
+                    font-weight: bold;
+                    color:#0b19dde1;
+                }
+            }
+        }
+        &CTA{
+            position:fixed;
+            bottom:0;
+            width:100vw;
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+            background-color:#fff;
+            border-radius: 12px 12px 0 0;
+            box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.2);
+            padding:1.5rem 1rem;
+            left:0;
+            >div{
+               
+                >span{
+                    font-size: 1.5rem;
+                    color:#2431e9e1
+                }
+            }
+            >button{
+                width:90%;
+                border-radius: 13px;
+                padding:10px 8px;
+                background-color:#4550f3;
+                color:#fff;
+                font-weight: 700;
+                outline-width: 0;
+                border-width: 0;
+            }
+        }
+        &Description{
+            >p{
+                font-weight: 400;
+                color:rgb(121, 117, 117);
+            }
+        }
+        padding:1rem;
+        >h1{
+            margin-bottom: 0.4rem;
+        }
+        >p{
+            color:rgb(146, 143, 143);
+            >span{
+                margin-right: 0.4rem;
+            }
+        }
+    }
+}
+
+.detailsBack{
+    position:absolute;
+    top:1rem;
+    left:1rem;
+    color: #fff;
+    font-size: 1.4rem;
+}
